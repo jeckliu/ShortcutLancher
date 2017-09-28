@@ -1,19 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jeckliu.shortcutlauncher.MainActivity">
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample"
+        android:text="炫酷一" />
+
+    <Button
+        android:id="@+id/bt_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample1"
+        android:text="炫酷二" />
+
+
+    <Button
+        android:id="@+id/bt_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample2"
+        android:text="炫酷三" />
+
+    <Button
+        android:id="@+id/bt_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample3"
+        android:text="炫酷四" />
 
     <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:text="创建快捷方式操作"
+        android:textSize="25sp"
+        android:textColor="#00f0f0"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/bt_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample4"
+        android:text="为炫酷一创建快捷方式" />
+
+    <Button
+        android:id="@+id/bt_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample5"
+        android:text="为炫酷二创建快捷方式" />
+
+    <Button
+        android:id="@+id/bt_06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample6"
+        android:text="为炫酷三创建快捷方式" />
+
+    <Button
+        android:id="@+id/bt_07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSample7"
+        android:text="为炫酷四创建快捷方式" />
+
+</LinearLayout>
