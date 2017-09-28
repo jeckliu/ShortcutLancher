@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     public static void createShortcut(Context context, String name, Class mClass) {
         Intent objIntent = new Intent();
         objIntent.setClass(context, mClass);//点击后进入的Activity
-        objIntent.putExtra(PARAM,name);
+        objIntent.putExtra(PARAM,name); //带入的参数
 
         Intent installer = new Intent();
         installer.putExtra("android.intent.extra.shortcut.INTENT", objIntent);
